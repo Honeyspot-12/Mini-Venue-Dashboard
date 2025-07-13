@@ -1,0 +1,93 @@
+/* Full height layout */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #343a40;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Page Wrapper */
+.page {
+  min-height: calc(100vh - 60px); /* Subtract navbar height */
+  padding: 40px 5%;
+  box-sizing: border-box;
+}
+
+/* Venue Card Styling */
+.venue-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease;
+}
+
+.venue-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.venue-card h3 {
+  margin-top: 0;
+}
+
+.venue-card p {
+  margin: 5px 0;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Form Layout */
+form input,
+form button {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  font-size: 0.95rem;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #007bff;
+}
